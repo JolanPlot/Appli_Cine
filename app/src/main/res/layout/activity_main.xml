@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultRessource">
+
+    //Titre Film
+    <TextView
+        android:id="@+id/TextViewMovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/title_name_movie"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/EditTextMovieName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_toEndOf="@id/TextViewMovieName"
+        android:hint="@string/title_name_movie"
+        android:layout_toRightOf="@id/TextViewMovieName" />
+
+   // Date Projection
+
+    <TextView
+        android:id="@+id/TextViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/EditTextMovieName"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/date_project_movie"
+        />
+
+    // Choix Date
+    <Spinner
+        android:id="@+id/Spinner_Date"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewMovieName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:datePickerMode="spinner" /> //Option pour affichage calendrier
+
+    // Choix Heures
+    <Spinner
+        android:id="@+id/Spinner_Times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewMovieName"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@id/Spinner_Date"
+        android:layout_toRightOf="@id/Spinner_Date"
+        android:gravity="center"
+        android:entries="@array/times"
+        />
+
+
+    //Scenario
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewScenario"
+        android:layout_below="@id/Spinner_Date"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:text="@string/grade_scenario"
+        android:entries="@array/grades_0to5" />
+
+    // Note Scenario
+    <Spinner
+        android:id="@+id/SpinnerScenario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Spinner_Times"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@id/TextViewScenario"
+        android:layout_toRightOf="@id/TextViewScenario"
+        android:gravity="center"
+        android:entries="@array/grades_0to5"/>
+
+    // Réalisation
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewRealisation"
+        android:layout_below="@id/TextViewScenario"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:text="@string/grade_realisation"/>
+
+    // Note Réalisation
+    <Spinner
+        android:id="@+id/SpinnerRealisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SpinnerScenario"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/TextViewRealisation"
+        android:layout_toRightOf="@id/TextViewRealisation"
+        android:gravity="center"
+        android:entries="@array/grades_0to5"/>
+
+    // Musique
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewMusique"
+        android:layout_below="@id/TextViewRealisation"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:text="@string/grade_musique"/>
+
+    // Note Musique
+    <Spinner
+        android:id="@+id/SpinnerMusique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SpinnerRealisation"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/TextViewMusique"
+        android:layout_toRightOf="@id/TextViewMusique"
+        android:gravity="center"
+        android:entries="@array/grades_0to5"/>
+
+    // Description
+    <EditText
+        android:id="@+id/EditTextMovieDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewMusique"
+        android:layout_marginTop="20dp"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/ButtonSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextMovieDesc"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10sp"
+        android:gravity="center"
+        android:text="@string/send" />
+
+</RelativeLayout>

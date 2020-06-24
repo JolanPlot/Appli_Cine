@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "904337322186",
+    "firebase_url": "https://applicinema.firebaseio.com",
+    "project_id": "applicinema",
+    "storage_bucket": "applicinema.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904337322186:android:ca09faaef97eecb0570433",
+        "android_client_info": {
+          "package_name": "com.example.app_cine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904337322186-or404ijt6q08de01jame8tfnal47d4b7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6d1iu5UVC7EVd9hzio3O8SH_AFHh07BM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904337322186-or404ijt6q08de01jame8tfnal47d4b7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

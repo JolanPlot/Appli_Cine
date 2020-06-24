@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">App_Cine</string>
+    <string name="title_name_movie">Titre du film :</string>
+    <string name="date_project_movie">Date de projection </string>
+    <string name="grade_scenario">Note scenario :</string>
+    <string name="grade_realisation">Note réalisation :</string>
+    <string name="grade_musique">Note musique :</string>
+    <string name="description">Description...</string>
+    <string name="send">Envoyer</string>
+
+
+</resources>
